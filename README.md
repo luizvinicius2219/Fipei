@@ -1,6 +1,29 @@
 ﻿# Fipei
 
-Consulta rapida FIPE para veiculos. O usuario informa codigos FIPE (manual ou arquivo `.txt`) e o app retorna valor, marca, modelo e todos os dados fornecidos pela API publica. Os resultados podem ser exportados em JSON completo ou CSV resumido.
+![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?logo=javascript&logoColor=000)
+![CSS](https://img.shields.io/badge/CSS-Modern-0ea5e9?logo=css3&logoColor=white)
+
+Aplicativo web de consulta rapida FIPE para veiculos. O usuario informa codigos FIPE (manual ou arquivo `.txt`) e o app retorna valor, marca, modelo e todos os dados fornecidos pela API publica. Os resultados podem ser exportados em JSON completo ou CSV resumido.
+
+## Preview
+
+![Preview do Fipei](docs/screenshot.svg)
+
+## Por que este projeto e util
+
+- **Economiza tempo** na busca de valores FIPE.
+- **Fluxo direto**: entrada simples, resposta rapida e exportacao.
+- **Foco em UX**: interface moderna, responsiva e clara.
+
+## Conhecimento tecnico demonstrado
+
+- **Node.js + Express** com API interna, validacao e controle de concorrencia.
+- **Frontend vanilla** (HTML/CSS/JS) com foco em performance e simplicidade.
+- **UX/UI**: layout moderno, responsivo e com feedback de estado.
+- **Exportacao de dados** para JSON (completo) e CSV (resumo).
+- **Integracao com API externa** com tratamento de erros.
 
 ## Funcionalidades
 
@@ -26,6 +49,8 @@ public/
   logo-fipei.svg
   favicon.svg
 server.js
+docs/
+  screenshot.svg
 package.json
 ```
 
@@ -84,6 +109,14 @@ node server.js
 
 - **JSON**: todos os dados retornados pela API.
 - **CSV**: resumo (codigo, marca, modelo, ano, combustivel, valor, mes de referencia).
+
+## Sobre o autor
+
+Desenvolvedor focado em automacao, integracoes e produtos web. Este projeto demonstra capacidade de criar uma solucao completa do zero: interface, backend, integracao com API e exportacao de dados.
+
+- GitHub: https://github.com/luizvinicius2219
+- LinkedIn: adicione seu link
+- Portfolio: adicione seu link
 
 ## Deploy rapido
 

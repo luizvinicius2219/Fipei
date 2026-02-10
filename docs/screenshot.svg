@@ -1,0 +1,46 @@
+﻿<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1c2a4a" />
+      <stop offset="100%" stop-color="#0b1024" />
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F7B733" />
+      <stop offset="100%" stop-color="#2EC4B6" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" rx="48" fill="url(#bg)" />
+
+  <circle cx="1040" cy="-40" r="200" fill="#F7B733" fill-opacity="0.12" />
+  <circle cx="140" cy="740" r="240" fill="#2EC4B6" fill-opacity="0.12" />
+
+  <rect x="140" y="90" width="920" height="520" rx="28" fill="rgba(255,255,255,0.92)" />
+
+  <rect x="200" y="140" width="52" height="52" rx="16" fill="url(#brand)" />
+  <text x="266" y="176" font-family="Space Grotesk, Arial" font-size="28" fill="#0B1024" font-weight="700">Fipei</text>
+  <text x="266" y="202" font-family="Space Grotesk, Arial" font-size="12" fill="#6D7280" letter-spacing="3">CONSULTA RAPIDA FIPE</text>
+
+  <rect x="200" y="240" width="420" height="140" rx="16" fill="#ffffff" stroke="#E2E8F0" />
+  <text x="220" y="268" font-family="Space Grotesk, Arial" font-size="12" fill="#6D7280">Codigos FIPE</text>
+  <rect x="220" y="280" width="380" height="80" rx="12" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="236" y="316" font-family="Space Grotesk, Arial" font-size="12" fill="#94A3B8">001004-9</text>
+  <text x="236" y="336" font-family="Space Grotesk, Arial" font-size="12" fill="#94A3B8">002079-2</text>
+
+  <rect x="200" y="400" width="200" height="44" rx="12" fill="url(#brand)" />
+  <text x="248" y="428" font-family="Space Grotesk, Arial" font-size="14" fill="#0B1024" font-weight="600">Consultar</text>
+
+  <rect x="660" y="240" width="320" height="260" rx="16" fill="#ffffff" stroke="#E2E8F0" />
+  <text x="680" y="270" font-family="Space Grotesk, Arial" font-size="12" fill="#6D7280">Resultados</text>
+
+  <rect x="680" y="290" width="280" height="72" rx="14" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="696" y="316" font-family="Space Grotesk, Arial" font-size="12" fill="#0F172A">Codigo 002182-2</text>
+  <text x="696" y="336" font-family="Space Grotesk, Arial" font-size="11" fill="#6B7280">Toyota Corolla Altis 1.8 16V</text>
+
+  <rect x="680" y="374" width="280" height="72" rx="14" fill="#F8FAFC" stroke="#E2E8F0" />
+  <text x="696" y="400" font-family="Space Grotesk, Arial" font-size="12" fill="#0F172A">Codigo 005456-9</text>
+  <text x="696" y="420" font-family="Space Grotesk, Arial" font-size="11" fill="#6B7280">VW Gol 1.0 Flex</text>
+
+  <rect x="680" y="462" width="140" height="40" rx="12" fill="#E2E8F0" />
+  <text x="700" y="488" font-family="Space Grotesk, Arial" font-size="12" fill="#0F172A" font-weight="600">Exportar CSV</text>
+</svg>
