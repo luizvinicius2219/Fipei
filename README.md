@@ -1,6 +1,14 @@
-﻿# Fipei — Consulta Rapida FIPE
+﻿# Fipei
 
-Aplicativo web simples e moderno para consultar codigos FIPE. O usuario pode colar os codigos ou enviar um `.txt`, e o app devolve o valor e todos os dados retornados pela API publica. Inclui exportacao em JSON completo e CSV (resumo).
+Consulta rapida FIPE para veiculos. O usuario informa codigos FIPE (manual ou arquivo `.txt`) e o app retorna valor, marca, modelo e todos os dados fornecidos pela API publica. Os resultados podem ser exportados em JSON completo ou CSV resumido.
+
+## Funcionalidades
+
+- Entrada de codigos FIPE por texto ou arquivo `.txt`
+- Validacao e normalizacao de codigos (formato `000000-0`)
+- Consulta em lote com limitador de concorrencia
+- Interface moderna e responsiva
+- Exportacao de resultados em **JSON** ou **CSV**
 
 ## Tecnologias
 
@@ -8,21 +16,24 @@ Aplicativo web simples e moderno para consultar codigos FIPE. O usuario pode col
 - **HTML, CSS e JavaScript** (front-end)
 - **Fetch API** (consumo da API FIPE)
 
-## Funcionalidades
+## Estrutura do projeto
 
-- Entrada de codigos FIPE por texto ou arquivo `.txt`
-- Validacao e normalizacao de codigos (formato `000000-0`)
-- Consulta em lote com limitador de concorrencia
-- Visual moderno e responsivo
-- Exportacao de resultados em **JSON** ou **CSV**
+```
+public/
+  index.html
+  styles.css
+  app.js
+  logo-fipei.svg
+  favicon.svg
+server.js
+package.json
+```
 
-## Nota
+## Requisitos
 
-Pequena atualizacao de documentacao para novo commit.
+- Node.js 18+
 
 ## Como rodar localmente
-
-Requisitos: **Node.js 18+**.
 
 ```bash
 npm install
@@ -47,40 +58,32 @@ Ou rode diretamente:
 & "C:\Program Files\nodejs\npm.cmd" start
 ```
 
-## API utilizada
+## Configuracao
 
-Por padrao, o app consulta:
+Variaveis suportadas:
 
-```
-https://brasilapi.com.br/api/fipe/preco/v1/{codigo}
-```
+- `FIPE_API_BASE` (padrao: `https://brasilapi.com.br/api/fipe/preco/v1`)
+- `FIPE_CONCURRENCY` (padrao: `5`)
 
-Para trocar de provedor, defina a variavel `FIPE_API_BASE` ao iniciar o servidor:
+Exemplo:
 
 ```powershell
 $env:FIPE_API_BASE = "https://sua-api.com/fipe"
+$env:FIPE_CONCURRENCY = "3"
 node server.js
 ```
 
-A rota interna do app:
+## API interna
 
-```
-POST /api/fipe
-Body: { "codes": ["000000-0", "111111-1"] }
-```
+- `POST /api/fipe`
+  - Body: `{ "codes": ["000000-0", "111111-1"] }`
+- `GET /api/health`
+  - Retorna status e timestamp
 
-## Estrutura do projeto
+## Exportacao
 
-```
-public/
-  index.html
-  styles.css
-  app.js
-  logo-fipei.svg
-  favicon.svg
-server.js
-package.json
-```
+- **JSON**: todos os dados retornados pela API.
+- **CSV**: resumo (codigo, marca, modelo, ano, combustivel, valor, mes de referencia).
 
 ## Deploy rapido
 
@@ -93,12 +96,3 @@ package.json
 1. Crie um **Web Service** no Render e conecte o repo.
 2. Build command: `npm install`
 3. Start command: `npm start`
-
-## Exportacao
-
-- **JSON**: todos os dados retornados pela API.
-- **CSV**: resumo (codigo, marca, modelo, ano, combustivel, valor, mes de referencia).
-
----
-
-Se quiser adaptar para outra API FIPE ou adicionar filtros/relatorios, e so me chamar.
