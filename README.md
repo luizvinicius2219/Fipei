@@ -1,9 +1,11 @@
 ﻿# Fipei
 
-![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)
-![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?logo=javascript&logoColor=000)
-![CSS](https://img.shields.io/badge/CSS-Modern-0ea5e9?logo=css3&logoColor=white)
+[![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org)
+[![Express](https://img.shields.io/badge/Express-4.x-000000?logo=express&logoColor=white)](https://expressjs.com)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES2023-F7DF1E?logo=javascript&logoColor=000)](https://developer.mozilla.org/docs/Web/JavaScript)
+[![CSS](https://img.shields.io/badge/CSS-Modern-0ea5e9?logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+
+**Demo ao vivo:** https://fipei.vercel.app/
 
 Aplicativo web de consulta rapida FIPE para veiculos. O usuario informa codigos FIPE (manual ou arquivo `.txt`) e o app retorna valor, marca, modelo e todos os dados fornecidos pela API publica. Os resultados podem ser exportados em JSON completo ou CSV resumido.
 
@@ -115,7 +117,7 @@ node server.js
 Desenvolvedor focado em automacao, integracoes e produtos web. Este projeto demonstra capacidade de criar uma solucao completa do zero: interface, backend, integracao com API e exportacao de dados.
 
 - GitHub: https://github.com/luizvinicius2219
-- LinkedIn: https://www.linkedin.com/in/devluizvinicius/
+- LinkedIn: adicione seu link
 - Portfolio: adicione seu link
 
 ## Deploy rapido
