@@ -120,6 +120,8 @@ Desenvolvedor focado em automacao, integracoes e produtos web. Este projeto demo
 
 ## Deploy rapido
 
+Recomendado: **Vercel** para publicar rapidamente a versao web.
+
 ### Vercel
 1. Suba o repositorio no GitHub.
 2. Importe o projeto no Vercel.
